@@ -14,7 +14,7 @@ import { useParams, useLocation } from 'react-router-dom';
 import Instruction from './Pages/Instruction';
 import Registration from './Pages/Registration';
 import RegistrationFormPage from "./pages/RegistrationFormPage";
-
+import Schedules from "./Pages/Schedule";
 
 
 
@@ -81,6 +81,14 @@ const App = () => {
         element={
           <>
             <Home />
+          </>
+        }
+      />
+      <Route
+        path="/schedules"
+        element={
+          <>
+            <Schedules />
           </>
         }
       />

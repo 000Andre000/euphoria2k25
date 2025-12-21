@@ -4,12 +4,12 @@ export const REGISTRATION_FORMS = {
   solo_regional: {
     title: "Solo Singing (Regional)",
     description: "Register for regional solo singing",
-    scriptUrl: "YOUR_SCRIPT_URL_1",
+    scriptUrl: "https://script.google.com/macros/s/AKfycbxdC_BQuElc4z_gtIwyKvswj4v_yV08zaBf5W9b1BwMSuxEBM_Pk-QHCi1F2Zgeur9x/exec",
     formId: "solo_regional",
     fields: [
       { id: "name", label: "Name", type: "text", required: true },
       { id: "email", label: "Email", type: "email", required: true },
-      { id: "contact", label: "Phone Number", type: "tel", required: true },
+      { id: "phone", label: "Phone Number", type: "tel", required: true },
       {
         id: "collegeName",
         label: "College Name",
@@ -25,12 +25,12 @@ export const REGISTRATION_FORMS = {
   solo_western: {
     title: "Solo Singing (Western)",
     description: "Register for western solo singing",
-    scriptUrl: "YOUR_SCRIPT_URL_2",
+    scriptUrl: "https://script.google.com/macros/s/AKfycbxdC_BQuElc4z_gtIwyKvswj4v_yV08zaBf5W9b1BwMSuxEBM_Pk-QHCi1F2Zgeur9x/exec",
     formId: "solo_western",
     fields: [
       { id: "name", label: "Name", type: "text", required: true },
       { id: "email", label: "Email", type: "email", required: true },
-      { id: "contact", label: "Phone Number", type: "tel", required: true },
+      { id: "phone", label: "Phone Number", type: "tel", required: true },
       {
         id: "collegeName",
         label: "College Name",
@@ -46,7 +46,7 @@ export const REGISTRATION_FORMS = {
   group_dance: {
     title: "Group Dance",
     description: "Register your dance group",
-    scriptUrl: "YOUR_SCRIPT_URL_3",
+    scriptUrl: "https://script.google.com/macros/s/AKfycbwPlH2mGmF6ensAD9F1PN4tmWzZENxnLD4i-2n5qQZF6ob-o6h-oFJiqLVabxtToffA/exec",
     formId: "group_dance",
     fields: [
       { id: "group_name", label: "Group Name", type: "text", required: true },
@@ -56,7 +56,7 @@ export const REGISTRATION_FORMS = {
   sports: {
     title: "Sports Registration",
     description: "Register for sports events",
-    scriptUrl: "YOUR_SCRIPT_URL_4",
+    scriptUrl: "https://script.google.com/macros/s/AKfycbwPlH2mGmF6ensAD9F1PN4tmWzZENxnLD4i-2n5qQZF6ob-o6h-oFJiqLVabxtToffA/exec",
     formId: "sports",
     fields: [
       { id: "player_name", label: "Player Name", type: "text", required: true },
