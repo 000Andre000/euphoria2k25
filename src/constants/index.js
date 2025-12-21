@@ -85,6 +85,11 @@ export const navigation = [
     title: "Tier List",
     url: "/#/tierlist",
   },
+  {
+    id: "6",
+    title: "Registration",
+    url: "/#/registration",
+  },
   
 ];
 
