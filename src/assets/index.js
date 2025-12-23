@@ -4,7 +4,7 @@ import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import pause from "./pause.svg";
-import gradient from "./gradient.png";
+import gradient from "./gradi ent.png";
 import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";

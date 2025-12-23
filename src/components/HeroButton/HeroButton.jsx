@@ -1,19 +1,38 @@
 import React from "react";
 import styled from "styled-components";
 
-const GlitchButton = () => {
+const GlitchButton = ({
+  text = "Explore Euphoria",
+  primary = "#fd3649",
+  accent = "#00e6f6",
+  highlight = "#f8f005",
+  to = null,
+  flip = false,
+  onClick,
+}) => {
+  const handleClick = (e) => {
+    if (to) {
+      const target = document.getElementById(to);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    if (onClick) {
+      onClick(e);
+    }
+  };
+
   return (
-    <Wrapper>
-      <button
-        className="glitch-btn"
-        type="button"
-        onClick={() =>
-          document
-            .getElementById("company-logos")
-            ?.scrollIntoView({ behavior: "smooth" })
-        }
-      >
-        Explore Euphoria
+    <Wrapper
+      primary={primary}
+      accent={accent}
+      highlight={highlight}
+      text={text}
+      flip={flip}
+    >
+      <button className="glitch-btn" type="button" onClick={handleClick}>
+        <span>{text}</span>
       </button>
     </Wrapper>
   );
@@ -22,21 +41,35 @@ const GlitchButton = () => {
 export default GlitchButton;
 
 const Wrapper = styled.div`
-  .glitch-btn,
-  .glitch-btn::after {
+  .glitch-btn {
     width: 300px;
     height: 64px;
     font-size: 19px;
-    text-align: center;
     font-family: "Blender Pro", sans-serif;
     font-weight: 100;
-    background: linear-gradient(45deg, transparent 5%, #fd3649 5%);
+    text-align: center;
     border: 0;
     color: #fff;
     letter-spacing: 3px;
-    box-shadow: 6px 0 0 #00e6f6;
-    position: relative;
     cursor: pointer;
+    position: relative;
+
+    background: linear-gradient(
+      45deg,
+      transparent 5%,
+      ${({ primary }) => primary} 5%
+    );
+
+    box-shadow: 6px 0 0 ${({ accent }) => accent};
+
+    /* 🔥 flip ONLY the button */
+    transform: ${({ flip }) => (flip ? "scaleX(-1)" : "none")};
+  }
+
+  /* 🔁 unflip visible text */
+  .glitch-btn > span {
+    display: inline-block;
+    transform: ${({ flip }) => (flip ? "scaleX(-1)" : "none")};
   }
 
   .glitch-btn::after {
@@ -47,26 +80,30 @@ const Wrapper = styled.div`
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
 
-    content: "Explore Euphoria";
-    display: block;
+    content: "${({ text }) => text}";
     position: absolute;
     inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: linear-gradient(
       45deg,
       transparent 3%,
-      #00e6f6 3%,
-      #00e6f6 5%,
-      #fd3649 5%
+      ${({ accent }) => accent} 3%,
+      ${({ accent }) => accent} 5%,
+      ${({ primary }) => primary} 5%
     );
 
     text-shadow:
-      -3px -3px 0 #f8f005,
-       3px  3px 0 #00e6f6;
+      -3px -3px 0 ${({ highlight }) => highlight},
+       3px  3px 0 ${({ accent }) => accent};
 
     clip-path: var(--slice-0);
-
     animation: glitch 1.2s steps(2, end) infinite;
+
+    /* 🔁 unflip glitch layer */
+    transform: ${({ flip }) => (flip ? "scaleX(-1)" : "none")};
   }
 
   @keyframes glitch {

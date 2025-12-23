@@ -15,6 +15,7 @@ import './Euphoria/fixture.css';
 import { COMPS, IT, HS, DOMMF, BMS, EXTC, MECH, ITI } from "../assets";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import logo from "../assets/hero/EuohoriaLogo.webp";
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -214,7 +215,7 @@ const Services = () => {
               </div>
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h2 className="h2 mb-0 p-0">Marathon</h2>
-                <h4 className="h5 mb-2 text-n-2">January 11th</h4>
+                <h4 className="h5 mb-2 text-n-2">January 17th</h4>
               </div>
             </div>
 
@@ -277,25 +278,14 @@ const Services = () => {
                 
               </Swiper>
 
-              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
-                <video
-                  ref={videoRef}
-                  src={theme}
-                  className="w-full h-full object-cover"
-                  onTimeUpdate={handleProgress}
-                  width={520}
-                  height={400}
-                  muted
-                  autoPlay
-                  loop
-                  playsInline
-                ></video>
-                <VideoBar
-                  isPlaying={isPlaying}
-                  progress={progress}
-                  onPlayPause={handlePlayPause}
-                />
-              </div>
+             <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem] flex items-center justify-center">
+  <img 
+    src={logo} 
+    alt="Logo"
+    className="w-full h-full object-contain"
+  />
+</div>
+
             </div>
           </div>
           <Gradient />

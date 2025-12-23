@@ -15,6 +15,7 @@ import {useState , useEffect} from "react";
 import {EuphoriaEvent}  from "../components/services/index";
 import Events from "./Events";
 
+
 export default function Home(){
 //    const [data, setdata] =useState();
    
