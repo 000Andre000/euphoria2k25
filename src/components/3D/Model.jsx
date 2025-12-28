@@ -7,7 +7,7 @@ export default function Model(props) {
   return (
     <primitive
       object={scene}
-      rotation={[Math.PI / 4, 0, 0]} // rotate 90° around Z
+      rotation={[-0.8, 0, 0]} // rotate 90° around Z
       scale={0.5} // scale down the model
       {...props}
     />

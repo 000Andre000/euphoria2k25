@@ -1,7 +1,7 @@
-import { Canvas, useThree } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
+import { Canvas, useThree, useFrame } from "@react-three/fiber";
+import { Suspense, useState, useEffect, useRef } from "react";
 import Model from "./Model";
-import { useState, useEffect } from "react";
+
 
 export default function ThreeScene({ paused }) {
   const [scale, setScale] = useState(0.8);
@@ -35,9 +35,9 @@ export default function ThreeScene({ paused }) {
   );
 }
 
-/* 🔥 Scene Controller */
 function Scene({ paused, scale, position }) {
   const { gl } = useThree();
+  const lightRef = useRef();
 
   useEffect(() => {
     if (paused) {
@@ -46,12 +46,33 @@ function Scene({ paused, scale, position }) {
     return () => gl.setAnimationLoop(null);
   }, [paused, gl]);
 
+  // 🔥 Animate light
+  useFrame(({ clock }) => {
+    const t = clock.getElapsedTime();
+
+    if (lightRef.current) {
+      lightRef.current.position.x = Math.sin(t) * 5;
+      lightRef.current.position.z = Math.cos(t) * 5;
+      lightRef.current.position.y = 4 + Math.sin(t * 0.5);
+    }
+  });
+
   return (
     <>
-      <ambientLight intensity={0.8} />
-      <directionalLight position={[5, 5, 5]} />
+      {/* <ambientLight intensity={0.8} /> */}
+   
+
+<directionalLight
+  ref={lightRef}
+  color="#0000ff  "     // warm key light
+  intensity={1}
+  position={[5, 5, 5]}
+/>
+
+
+
       <Model scale={scale} position={position} />
-      <Environment preset="studio" />
+      {/* <Environment preset="studio" /> */}
     </>
   );
 }

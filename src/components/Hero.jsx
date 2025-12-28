@@ -50,7 +50,7 @@ const Hero = () => {
     transition-transform duration-300
   "
       >
-        <GlitchButton text="View Logos" to="logo" />
+        <GlitchButton text="Explore Euphoria" to="how-to-use" />
       </div>
 
       {/* RIGHT BUTTON */}
