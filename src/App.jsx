@@ -15,6 +15,7 @@ import Instruction from './Pages/Instruction';
 import Registration from './Pages/Registration';
 import RegistrationFormPage from "./pages/RegistrationFormPage";
 import Schedules from "./Pages/Schedule";
+import Coordi from './Pages/Coordi';
 
 
 
@@ -140,6 +141,15 @@ const App = () => {
           </>
         }
       />
+      <Route
+      path="/coordinators"
+      element={
+          <>
+            <Coordi/> 
+          </>
+        }
+      />
+
       <Route path="/register/:formKey" element={<RegistrationFormPage />} />
 
       {/* <Route
