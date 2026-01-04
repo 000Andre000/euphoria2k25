@@ -4,6 +4,9 @@ import Heading from "./Heading";
 import theme from "../assets/videos/theme_reveal.mp4";
 import { service1, service2, service3, check, marathon } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
+
+import bg from "../components/CoordiCard/pngegg-Photoroom.png";
+import bg1 from "../components/CoordiCard/bg1.png";
 import {
   // PhotoChatMessage,
   Gradient,
@@ -288,7 +291,9 @@ const Services = () => {
 
             </div>
           </div>
-          <Gradient />
+          <div className="left-[100rem]">
+          <Gradient src={bg} />
+          </div>
         </div>
       </div>
     </Section>
