@@ -76,11 +76,7 @@ export const navigation = [
     title: "Departments",
     url: "/#/department",
   },
-  {
-    id: "4",
-    title: "Instruction",
-    url: "/#/instruction",
-  },
+ 
   {
     id: "5",
     title: "Tier List",
@@ -88,16 +84,11 @@ export const navigation = [
   },
   {
     id: "6",
-    title: "Registration",
-    url: "/#/registration",
-  },
-  {
-    id: "7",
     title: "Schedules",
     url: "/#/schedules",
   },
   {
-    id: "8",
+    id: "7",
     title: "Co-ordinators",
     url: "/#/coordinators",
   }
