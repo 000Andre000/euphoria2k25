@@ -64,7 +64,10 @@
 }
 
 
-.status-badge {
+.gender-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 12px;
   padding: 5px 12px;
   border-radius: 10px;
@@ -74,28 +77,24 @@
   letter-spacing: 0.5px;
 }
 
-/* UPCOMING */
-.status-badge.upcoming {
-  background: blue;
-  border-color: #F9C744;
-  color: #FFE08A;
+/* GIRL */
+.gender-badge.girl {
+  background: #ffe4ec;
+  border-color: #ff6f91;
+  color: #b8004c;
 }
 
-/* LIVE */
-.status-badge.live {
-  background: lightgreen;
-  border-color: #FFD56A;
-  color: #120d02; /* dark contrast */
-  animation: pulse 1.5s infinite;
+/* BOY */
+.gender-badge.boy {
+  background: #e3f2fd;
+  border-color: #42a5f5;
+  color: #0d47a1;
 }
 
-/* FINISHED */
-.status-badge.finished {
-  background: red;
-  border-color: #D8B24A;
-  color: #FFF1C1;
+.competition-info {
+  font-weight: 600;
+  color: #000000;
 }
-
 
 
 /* Info Styles */
