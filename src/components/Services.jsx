@@ -7,6 +7,8 @@ import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 
 import bg from "../components/CoordiCard/pngegg-Photoroom.png";
 import bg1 from "../components/CoordiCard/bg1.png";
+import gradient from "../assets/gradient.png";
+
 import {
   // PhotoChatMessage,
   Gradient,
@@ -292,7 +294,7 @@ const Services = () => {
             </div>
           </div>
           <div className="left-[100rem]">
-          <Gradient src={bg} />
+          <Gradient src={gradient} />
           </div>
         </div>
       </div>

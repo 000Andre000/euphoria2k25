@@ -75,7 +75,7 @@ function Leaderboard() {
           <div className="main-container">
             
             <div className="podium-section">
-              <h2 className="podium-title">Top Performers</h2>
+              <h2 className="podium-title">Ranking</h2>
               <div className="podium-grid">
                
                 <div className="podium-second">
@@ -103,7 +103,7 @@ function Leaderboard() {
             </div>
 
                        <div className="stats-footer">
-              <div className="stats-container">
+              {/* <div className="stats-container">
                 <div className="stats-item">
                   <p className="stats-value">{leaderboardData.length}</p>
                   <p className="stats-label">Total Players</p>
@@ -126,7 +126,7 @@ function Leaderboard() {
                   <p className="stats-value">-</p>
                   <p className="stats-label">Current Day</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

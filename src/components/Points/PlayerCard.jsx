@@ -20,7 +20,7 @@ export function PlayerCard({ rank, name,  isPodium = false ,totalScore }) {
             <div className="podium-info">
               <h3 className="podium-name">{name}</h3>
              {/*  <p className="podium-score">{score.toloacaleString()}</p> */}
-              <p className="player-score">{totalScore} Points</p>
+              {/* <p className="player-score">{totalScore} Points</p> */}
               
             </div>
           </div>
@@ -36,10 +36,10 @@ export function PlayerCard({ rank, name,  isPodium = false ,totalScore }) {
         <h3 className="player-name">{name}</h3>
         <p className="player-rank-label">Rank #{rank}</p>
       </div>
-      <div className="player-score-section">
+      {/* <div className="player-score-section">
         <p className="player-score">{totalScore}</p>
         <p className="player-points-label">points</p>
-      </div>
+      </div> */}
     </div>
   );
 }
