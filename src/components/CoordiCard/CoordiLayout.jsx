@@ -4,14 +4,15 @@ import { members } from "../../constants";
 import "./coordi.css";
 
 const CoordiLayout = () => {
-  const firstSection = members.slice(0, 4);
-  const remainingSection = members.slice(4);
+  const lead = members.slice(0, 4);
+  const senior = members.slice(4,10);
+  const junior = members.slice(10,16);
 
   return (
     <div className="page-wrapper">
       <h1 className="tag-name lead" style={{ paddingBottom: 50 }}> LEAD CO-ORDINATORS </h1>
       <div className="grid grid-two">
-        {firstSection.map((item) => (
+        {lead.map((item) => (
           <DisplayCoordi
             key={item.id}
             name={item.name}
@@ -21,10 +22,23 @@ const CoordiLayout = () => {
         ))}
       </div>
       <h1 className="tag-name" style={{ paddingTop: 50 }}>
-        SENIOR AND JUNIOR CO-ORDINATORS
+        SENIOR CO-ORDINATORS
       </h1>
       <div className="grid grid-three">
-        {remainingSection.map((item) => (
+        {senior.map((item) => (
+          <DisplayCoordi
+            key={item.id}
+            name={item.name}
+            position={item.position}
+            image={item.image}
+          />
+        ))}
+      </div>
+      <h1 className="tag-name" style={{ paddingTop: 50 }}>
+        JUNIOR CO-ORDINATORS
+      </h1>
+      <div className="grid grid-three">
+        {junior.map((item) => (
           <DisplayCoordi
             key={item.id}
             name={item.name}
