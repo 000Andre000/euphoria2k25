@@ -48,6 +48,14 @@ import {
   img5,
   img6,
   img7,
+  bmsLogo,
+  compsLogo,
+  domfLogo,
+  extcLogo,
+  hsLogo,
+  itLogo,
+  mechLogo,
+  itiLogo,
 } from "../assets";
 import { title } from "framer-motion/client";
 
@@ -329,7 +337,7 @@ export const departments = [
     color1: "#F6EED8",
     color2: "#F6EED8",
     captain: "Suraj Naik",
-    logo: "src/assets/dept/COMPS_logo_25.png"
+    deptlogo: compsLogo,
   },
   {
     id: "1",
@@ -338,16 +346,16 @@ export const departments = [
     color1: "#A020F0",
     color2: "#000",
     captain: "Prabind Kapar",
-    logo: "src/assets/dept/MECH_logo_25.png"
+    deptlogo: mechLogo,
   },
   {
     id: "2",
     department: "IT",
     url: "/department/it",
-    color1: "#002a00ff",
+    color1: "#00a900ff",
     color2: "#00FF00",
     captain: "Abhishek Agrahari",
-    logo:"src/assets/dept/IT_logo_25.png"
+    deptlogo: itLogo,
   },
   {
     id: "3",
@@ -356,7 +364,7 @@ export const departments = [
     color1: "#FF0000",
     color2: "#000",
     captain: "Aryan Arde",
-    logo: "src/assets/dept/EXTC_logo_25.png"
+    deptlogo: extcLogo,
   },
   {
     id: "4",
@@ -365,7 +373,7 @@ export const departments = [
     color1: "#008080",
     color2: "#FFF",
     captain: "Kevin Carvalho",
-    logo:"src/assets/dept/DOMF_logo_25.png"
+    deptlogo: domfLogo,
   },
   {
     id: "5",
@@ -374,16 +382,16 @@ export const departments = [
     color1: "	#FFC0CB",
     color2: "#FFF",
     captain: "Pratam Koli",
-    logo:""
+    deptlogo: itiLogo,
   },
   {
     id: "6",
     department: "HS",
     url: "/department/hs",
-    color1: "#800080",
+    color1: "#b122b1ff",
     color2: "#000",
     captain: "Shezaad Khan",
-    logo:"src/assets/dept/HS_logo_25.png"
+    deptlogo: hsLogo,
   },
   {
     id: "7",
@@ -392,7 +400,7 @@ export const departments = [
     color1: "	#025c9bff",
     color2: "#FFF",
     captain: "Thomas Anthony",
-    logo:"src/assets/dept/bms_logo_25.png"
+    deptlogo: bmsLogo,
   },
 ];
 
