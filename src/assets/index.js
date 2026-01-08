@@ -107,6 +107,15 @@ import IT from "../assets/Gride/IT.png";
 
 import DebateDUO from "../assets/Gride/DebateDUO.png";
 
+import bmsLogo from "./dept/bms_logo_25.png";
+import compsLogo from "./dept/COMPS_logo_25.png";
+import domfLogo from "./dept/DOMF_logo_25.png";
+import extcLogo from "./dept/EXTC_logo_25.png";
+import hsLogo from "./dept/HS_logo_25.png";
+import itLogo from "./dept/IT_logo_25.png";
+import mechLogo from "./dept/MECH_logo_25.png";
+import itiLogo from "./dept/DBITI_logo.png";
+
 export {
   DebateDUO,
   COMPS,
@@ -203,4 +212,12 @@ export {
   img5,
   img6,
   img7,
+  bmsLogo,
+  compsLogo,
+  domfLogo,
+  extcLogo,
+  hsLogo,
+  itLogo,
+  mechLogo,
+  itiLogo,
 };

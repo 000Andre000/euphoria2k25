@@ -371,54 +371,56 @@ function ScheduleHandler() {
   const [matches, setMatches] = useState(STATIC_SCHEDULES);
   const [loading, setLoading] = useState(true);
 
-  const fetchWinners = async () => {
-    try {
-      const query = {
-        query: `
-          query GetWinners {
-            schedules {
-              id
-              winner
+const fetchWinners = async () => {
+  try {
+    const res = await fetch(
+      "https://ap-south-1.cdn.hygraph.com/content/cm5c8fq6d012r07uvhu1pnu6z/master",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          query: `
+            query GetWinners {
+              schedules {
+                matchid
+                winner
+              }
             }
-          }
-        `,
-      };
+          `,
+        }),
+      }
+    );
 
-      const res = await fetch(
-        "https://ap-south-1.cdn.hygraph.com/content/cm5c8fq6d012r07uvhu1pnu6z/master",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(query),
-        }
-      );
+    const json = await res.json();
+    console.log("Hygraph response:", json);
 
-      const data = await res.json();
-      const winnersFromCMS = data?.data?.schedules ?? [];
-
-      // 🔁 merge winner into static schedule
-      setMatches((prevMatches) =>
-        prevMatches.map((match) => {
-          const cmsMatch = winnersFromCMS.find(
-            (m) => m.id === match.id
-          );
-
-          if (!cmsMatch || !cmsMatch.winner) return match;
-
-          return {
-            ...match,
-            
-            winner: cmsMatch.winner,
-          };
-        })
-      );
-
-      setLoading(false);
-    } catch (err) {
-      console.error("Hygraph error:", err);
-      setLoading(false);
+    if (json.errors) {
+      console.error("GraphQL errors:", json.errors);
+      return;
     }
-  };
+
+    const winnersFromCMS = json.data?.schedules ?? [];
+
+    setMatches((prev) =>
+      prev.map((match) => {
+        const cmsMatch = winnersFromCMS.find(
+          (m) => m.matchid === match.id
+        );
+        return cmsMatch?.winner
+          ? { ...match, winner: cmsMatch.winner }
+          : match;
+      })
+    );
+  } catch (err) {
+    console.error("Network error:", err);
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   useEffect(() => {
     fetchWinners();

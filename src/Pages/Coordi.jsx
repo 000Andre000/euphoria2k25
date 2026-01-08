@@ -1,20 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { homeNavigation } from "../constants";
+import DefaultPage from "../components/DefaultPage";
 import CoordiLayout from "../components/CoordiCard/CoordiLayout";
+import { homeNavigation } from "../constants";
 
 const Coordi = () => {
   return (
-    <>
-      <Header />
-
-      <main>
-        <CoordiLayout />
-      </main>
-
-      <Footer nav={homeNavigation} />
-    </>
+    <DefaultPage nav={homeNavigation}>
+      <CoordiLayout />
+    </DefaultPage>
   );
 };
 
