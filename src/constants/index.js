@@ -412,7 +412,7 @@ export const members = [
     id: 1,
     name: "NEVILLE D'SOUZA",
     position: "LEAD CO-ORDINATOR",
-    //image:hp;
+    image:'./src/assets/card/2.webp',
     //import the images
   },
   {
