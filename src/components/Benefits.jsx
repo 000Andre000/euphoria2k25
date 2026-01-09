@@ -12,10 +12,9 @@ const Benefits = () => {
   return (
     <Section id="committee">
       <div className="container relative z-2">
-        <Heading
-          className="md:max-w-md lg:max-w-2xl"
-          title="Organizing Committee"
-        />
+        <h1 className="text-5xl sm:text-6xl font-black uppercase text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 shadow-neonGraffiti mb-12">
+  Organizing Committee
+</h1>
 
         <div className="flex flex-wrap gap-10 mb-10 justify-center">
           {benefits.map((item) => (

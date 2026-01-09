@@ -1,9 +1,11 @@
 import React from "react";
 import template from "../../assets/coordi/template_new.png";
+import template1 from "../../assets/coordi/template1.png";
+
 
 const DisplayCoordi = ({ name, position, image }) => {
   return (
-    <div className="card" style={{ backgroundImage: `url(${template})` }}>
+    <div className="card" style={{ backgroundImage: `url(${template1})` }}>
       <div className="photo-placeholder">
         <img src={image} alt={name} className="card-photo" />
       </div>
