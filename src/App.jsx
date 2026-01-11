@@ -16,7 +16,9 @@ import Registration from './Pages/Registration';
 import RegistrationFormPage from "./pages/RegistrationFormPage";
 import Schedules from "./Pages/Schedule";
 import Coordi from './Pages/Coordi';
-
+//import Carousel from './components/Carousel'
+//import EventsPage from './components/EventsPage'
+//import Instructionspage from './components/InstructionsPage'
 
 
 // import GoogleFormsComponent from './components/Registration_Forms/Forms';
@@ -151,6 +153,9 @@ const App = () => {
       />
 
       <Route path="/register/:formKey" element={<RegistrationFormPage />} />
+      {/*  <Route path="/events/:categoryId" element={<EventsPage />} /> */}
+     {/*  <Route path="/events/:categoryId/:eventId" element={<Instructionspage/>} /> */}
+
 
       {/* <Route
         path="/forms"

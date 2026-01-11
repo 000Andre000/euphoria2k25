@@ -73,7 +73,13 @@ function Leaderboard() {
       <div className="leaderboard-container">
         <div className="leaderboard-page">
           <div className="main-container">
-            
+            <div className="leaderboard-hero">
+  <h1 className="leaderboard-hero-title">🏆 Leaderboard</h1>
+  <p className="leaderboard-hero-subtitle">
+    Compete. Climb. Conquer.
+  </p>
+</div>
+
             <div className="podium-section">
               <h2 className="podium-title">Top Performers</h2>
               <div className="podium-grid">
@@ -83,6 +89,8 @@ function Leaderboard() {
                 </div>
 
                 <div className="podium-first">
+                  <div className="crown">👑</div>
+
                   {topThree[0] && <PlayerCard {...topThree[0]} isPodium rank={1} />}
                 </div>
 

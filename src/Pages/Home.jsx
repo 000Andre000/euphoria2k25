@@ -40,7 +40,8 @@ export default function Home(){
         <Header />
         <Hero />
         <Services />
-        <Grid />
+        
+        {/* <Grid /> */}
         <Benefits />
         {/* <TierSystem/> */}
         {/* {data?.euphoriaEvents && <Events data={data.euphoriaEvents[0]} />} */}
