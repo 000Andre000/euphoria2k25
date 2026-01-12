@@ -116,6 +116,8 @@ import itLogo from "./dept/IT_logo_25.png";
 import mechLogo from "./dept/MECH_logo_25.png";
 import itiLogo from "./dept/DBITI_logo.png";
 
+import categoryBG from "./Gride/categoryBG.png";
+
 export {
   DebateDUO,
   COMPS,
@@ -220,4 +222,5 @@ export {
   itLogo,
   mechLogo,
   itiLogo,
+  categoryBG,
 };
