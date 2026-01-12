@@ -6,19 +6,20 @@ import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "./Carousel.css";
-import { categoryBG } from '../../assets';
+import { categoryBG,euphoriaText } from '../../assets';
 
-export default function Carousel({ sports, category, key }) {
+export default function Carousel({ events, category,categoryId}) {
   const navigate = useNavigate();
 
-  const handleClick = (eventName) => {
-    const eventId = eventName
-      .toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/[^\w-]/g, '');
+  const handleClick = (event) => {
+  const eventId =
+    typeof event === "object"
+      ? event.id
+      : event.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
 
-    navigate(`/events/${key}/${eventId}`);
+  navigate(`/instructions/${categoryId}/${eventId}`);
   };
+
 
   return (
     <div className="carousel-wrapper">
@@ -37,15 +38,22 @@ export default function Carousel({ sports, category, key }) {
         loop
         navigation
         modules={[Navigation]}
+        threshold={15}          // 🔥 distinguish tap vs swipe
+        onTap={(swiper) => {
+          const index = swiper.clickedIndex;
+          if (index == null) return;
+
+          const event = events[index];
+        handleClick(event);
+  }}
         className="mySwiper"
       >
-        {sports.map((sport, index) => (
+        {events.map((event, index) => (
           <SwiperSlide key={index}>
             <div
               className="sport-slide"
-              onClick={() => handleClick(sport)}
             >
-              {sport}
+              {typeof event === "object" ? event.name : event}
             </div>
           </SwiperSlide>
         ))}

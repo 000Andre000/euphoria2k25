@@ -118,6 +118,17 @@ import itiLogo from "./dept/DBITI_logo.png";
 
 import categoryBG from "./Gride/categoryBG.png";
 
+import compsCaptain from "./captains/comps.png";
+import mechCaptain from "./captains/mech.png";
+import extcCaptain from "./captains/extc.png"
+import itCaptain from "./captains/it.png";
+import itiCaptain from "./captains/iti.png";
+import hsCaptain from "./captains/hs.png";
+import domfCaptain from "./captains/domf.png";
+import bmsCaptain from "./captains/bms.png";
+
+import euphoriaText from "./Gride/euphoriaText.jpeg";
+
 export {
   DebateDUO,
   COMPS,
@@ -223,4 +234,13 @@ export {
   mechLogo,
   itiLogo,
   categoryBG,
+  compsCaptain,
+  mechCaptain,
+  extcCaptain,
+  itCaptain,
+  itiCaptain,
+  hsCaptain,
+  domfCaptain,
+  bmsCaptain,
+  euphoriaText,
 };

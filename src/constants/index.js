@@ -56,6 +56,14 @@ import {
   itLogo,
   mechLogo,
   itiLogo,
+  compsCaptain,
+  mechCaptain,
+  extcCaptain,
+  itCaptain,
+  itiCaptain,
+  hsCaptain,
+  domfCaptain,
+  bmsCaptain,
 } from "../assets";
 import { title } from "framer-motion/client";
 
@@ -106,7 +114,14 @@ export const navigation = [
 export const pointsnav = [];
 export const tierlist = [];
 export const schedulenav =[];
-export const capimg = [img0, img1, img2, img3, img4, img5, img6, img7];
+export const capimg = [compsCaptain,
+                      mechCaptain,
+                      itCaptain,
+                      extcCaptain,
+                      domfCaptain,
+                      itiCaptain,
+                      hsCaptain,
+                      bmsCaptain];
 
 export const homeNavigation = [
 ];

@@ -31,7 +31,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
+  background: linear-gradient(90deg, #150824, #250e40);
 
   /* Center slide text vertically */
   display: flex;
@@ -117,4 +117,39 @@ body {
   text-shadow: 0 2px 6px rgba(0,0,0,0.6); /* optional: makes text readable */
   text-align: center;   /* in case text wraps */
   letter-spacing: 4px;
+}
+
+.sport-slide{
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-size: 22px;
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    width: 70%;
+    height: 200px;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .carousel-header {
+    width: 70%;
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  .category-names {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .sport-slide {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .mySwiper .swiper-button-next::after,
+  .mySwiper .swiper-button-prev::after {
+    font-size: 18px;
+  }
 }

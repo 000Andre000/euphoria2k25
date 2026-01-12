@@ -81,8 +81,10 @@ function Grid() {
         {slides.map((slider) => (
         <Carousel
           key={slider.key}
+          categoryId={slider.key}
           category={slider.category}
-          sports={slider.sports}
+          events={slider.events}
+          onEventClick={handleClick}
         />
       ))}
         

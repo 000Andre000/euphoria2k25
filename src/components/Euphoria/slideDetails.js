@@ -2,8 +2,8 @@ export const slides = [
   {
     key: 1,
     category: "OUTDOOR SPORTS",
-    sports: ["FIELD FOOTBALL BOYS",
-            "BASKETBALL BOYS",
+    events: [{id:"a",name: "FIELD FOOTBALL BOYS",instruction: "cheow meow cheow cheow",},
+            {id:"b",name: "BASKETBALL BOYS",instruction: "teow teow teow"},
             "BASKETBALL GIRLS",
             "BOX CRICKET BOYS",
             "BOX CRICKET GIRLS",
@@ -19,7 +19,7 @@ export const slides = [
   {
     key: 2,
     category: "INDOOR SPORTS",
-    sports: ["TABLE TENNIS SINGLES BOYS",
+    events: ["TABLE TENNIS SINGLES BOYS",
             "TABLE TENNIS DOUBLES BOYS",
             "CARROM SINGLES BOYS",
             "PICKLEBALL DOUBLES BOYS",
@@ -33,12 +33,12 @@ export const slides = [
   {
     key: 3,
     category: "ATHLETICS",
-    sports: ["ATHLETICS [BOYS]", "ATHLETICS [GIRLS]"],
+    events: ["ATHLETICS [BOYS]", "ATHLETICS [GIRLS]"],
   },
   {
     key: 4,
     category: "GAMING",
-    sports: ["BGMI",
+    events: ["BGMI",
             "VALORANT",
             "CLASH ROYALE",
             "FIFA",
@@ -48,7 +48,7 @@ export const slides = [
   {
     key: 5,
     category: "PERFORMING ARTS",
-    sports: ["SOLO SINGING (REGIONAL)",
+    events: ["SOLO SINGING (REGIONAL)",
             "SOLO SINGING (WESTERN)",
             "DUET SINGING",
             "INSTRUMENTAL",
@@ -63,7 +63,7 @@ export const slides = [
   {
     key: 6,
     category: "LITERARY ARTS",
-    sports: ["GROUP DEBATE",
+    events: ["GROUP DEBATE",
             "DUO DEBATE",
             "ELOCUTION",
             "POETRY / SHAYARI",
@@ -73,7 +73,7 @@ export const slides = [
   {
     key: 7,
     category: "FINE ARTS",
-    sports: ["SHUTTER PAINTING",
+    events: ["SHUTTER PAINTING",
             "POT PAINTING",
             "ACT & ART",
             "TOTE BAG PAINTING"],
@@ -81,14 +81,14 @@ export const slides = [
   {
     key: 8,
     category: "COVERAGE",
-    sports: ["CANDID PHOTOGRAPHY",
+    events: ["CANDID PHOTOGRAPHY",
             "REEL MAKING",
             "SHORT FILM"],
   },
   {
     key: 9,
     category: "MEGA AND FUN",
-    sports: ["OBSTACLE RACE",
+    events: ["OBSTACLE RACE",
             "TREASURE HUNT",
             "7 UP & 7 DOWN CHALLENGE",
             "BALLOON GUN SHOOTING",
