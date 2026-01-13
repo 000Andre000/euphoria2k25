@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "./Carousel.css";
-import { categoryBG,euphoriaText } from '../../assets';
+import { categoryBG } from '../../assets';
 
 export default function Carousel({ events, category,categoryId}) {
   const navigate = useNavigate();
@@ -50,10 +50,15 @@ export default function Carousel({ events, category,categoryId}) {
       >
         {events.map((event, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="sport-slide"
-            >
+            <div className="sport-slide-wrapper">
+            <img
+              src={event.image}
+              alt={event.name}
+              className="sport-image"
+            />
+            <div className="sport-slide">
               {typeof event === "object" ? event.name : event}
+            </div>
             </div>
           </SwiperSlide>
         ))}
