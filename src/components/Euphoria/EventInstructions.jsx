@@ -26,14 +26,26 @@ export default function EventInstructions() {
           .replace(/[^\w-]/g, "") === eventId
   );
 
-  if (!event || !event.instruction)
+  if (!event || !event.instruction) {
     return <h2>Instructions not found</h2>;
+  }
 
   return (
     <DefaultPage nav={departments}>
       <div className="instructions-page">
         <h1 className="event-name">{event.name}</h1>
-        <p className="instruction-text">{event.instruction}</p>
+
+        <ul className="instruction-list">
+          {Array.isArray(event.instruction) ? (
+            event.instruction.map((point, index) => (
+              <li key={index} className="instruction-point">
+                {point}
+              </li>
+            ))
+          ) : (
+            <li className="instruction-point">{event.instruction}</li>
+          )}
+        </ul>
       </div>
     </DefaultPage>
   );
