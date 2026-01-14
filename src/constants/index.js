@@ -435,18 +435,20 @@ export const members = [
     id: 1,
     name: "NEVILLE D'SOUZA",
     position: "LEAD CO-ORDINATOR",
-    image:'./src/assets/card/2.webp',
+    image:'./src/assets/card/nevile.png',
     //import the images
   },
   {
     id: 2,
     name: "ZAIBA SHAIKH",
     position: "LEAD CO-ORDINATOR",
+     image:'./src/assets/card/zeba.png',
   },
   {
     id: 3,
     name: "TANISHQ BANE",
     position: "SPONSORSHIP LEAD",
+     image:'./src/assets/card/tanishq.png',
   },
   {
     id: 4,
@@ -457,26 +459,32 @@ export const members = [
     id: 5,
     name: "PRATHAMESH PARAB",
     position: "SENIOR CO-ORDINATOR",
+    
+    
   },
   {
     id: 6,
     name: "NICHELLE D’SOUZA",
     position: "SENIOR CO-ORDINATOR",
+     image:'./src/assets/card/nichelle.png',
   },
   {
     id: 7,
     name: "DWAYNE GEORGE NIXON",
     position: "SENIOR CO-ORDINATOR",
+     image:'./src/assets/card/dwayne.png',
   },
   {
     id: 8,
     name: "PRANJAL SAHU",
     position: "SENIOR CO-ORDINATOR",
+     image:'./src/assets/card/pranjal.png',
   },
   {
     id: 9,
     name: "AMEY DALVI",
     position: "SENIOR CO-ORDINATOR",
+     image:'./src/assets/card/amey.png',
   },
   {
     id: 10,
@@ -497,6 +505,7 @@ export const members = [
     id: 13,
     name: "NICOLE MENEZES",
     position: "JUNIOR CO-ORDINATOR",
+     image:'./src/assets/card/nicole.png',
   },
   {
     id: 14,
