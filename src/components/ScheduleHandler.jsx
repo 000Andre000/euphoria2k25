@@ -546,7 +546,7 @@ const STATIC_OUT = [
   {
     id: "out-58",
     teamA: "FINAL",
-    teamB: "",
+    teamB: "FINAL",
     date: "30/01/26",
     time: "10:00 AM",
     gender: "boy",
@@ -555,7 +555,7 @@ const STATIC_OUT = [
   {
     id: "out-59",
     teamA: "FINAL",
-    teamB: "",
+    teamB: "FINAL",
     date: "30/01/26",
     time: "10:30 AM",
     gender: "girl",
@@ -564,7 +564,7 @@ const STATIC_OUT = [
   {
     id: "out-60",
     teamA: "FINAL",
-    teamB: "",
+    teamB: "FINAL",
     date: "30/01/26",
     time: "11:00 AM",
     gender: "boy",
@@ -573,7 +573,7 @@ const STATIC_OUT = [
   {
     id: "out-61",
     teamA: "FINAL",
-    teamB: "",
+    teamB: "FINAL",
     date: "30/01/26",
     time: "12:30 PM",
     gender: "boy",
@@ -582,7 +582,7 @@ const STATIC_OUT = [
   {
     id: "out-62",
     teamA: "FINAL",
-    teamB: "",
+    teamB: "FINAL",
     date: "30/01/26",
     time: "4:30 PM",
     gender: "boy",
@@ -593,7 +593,7 @@ const STATIC_OUT = [
   {
     id: "out-63",
     teamA: "FINAL",
-    teamB: "",
+    teamB: "FINAL",
     date: "31/01/26",
     time: "12:30 PM",
     gender: "girl",
@@ -602,7 +602,7 @@ const STATIC_OUT = [
   {
     id: "out-64",
     teamA: "FINAL",
-    teamB: "",
+    teamB: "FINAL",
     date: "31/01/26",
     time: "3:30 PM",
     gender: "boy",
