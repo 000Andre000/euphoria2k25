@@ -448,6 +448,7 @@ export const members = [
     id: 3,
     name: "TANISHQ BANE",
     position: "SPONSORSHIP LEAD",
+     image:'./src/assets/card/tanishq.png',
      
   },
   {
