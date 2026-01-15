@@ -448,17 +448,19 @@ export const members = [
     id: 3,
     name: "TANISHQ BANE",
     position: "SPONSORSHIP LEAD",
-     image:'./src/assets/card/tanishq.png',
+     
   },
   {
     id: 4,
     name: "ANDRE FERNANDES",
     position: "WEB DEVELOPMENT LEAD",
+    image:'./src/assets/card/andre.png',
   },
   {
     id: 5,
     name: "PRATHAMESH PARAB",
     position: "SENIOR CO-ORDINATOR",
+     image:'./src/assets/card/prathamesh.png',
     
     
   },
@@ -472,7 +474,7 @@ export const members = [
     id: 7,
     name: "DWAYNE GEORGE NIXON",
     position: "SENIOR CO-ORDINATOR",
-     image:'./src/assets/card/dwayne.png',
+     image:'./src/assets/card/dwyane.png',
   },
   {
     id: 8,
@@ -490,16 +492,19 @@ export const members = [
     id: 10,
     name: "TIYA TRAVAS",
     position: "SENIOR CO-ORDINATOR",
+     image:'./src/assets/card/tiya.png',
   },
   {
     id: 11,
     name: "AAYUSH PULKUNDWAR",
     position: "JUNIOR CO-ORDINATOR",
+     image:'./src/assets/card/aayush.png',
   },
   {
     id: 12,
     name: "LAETICIA COSTA CORREIA",
     position: "JUNIOR CO-ORDINATOR",
+     image:'./src/assets/card/laetcia.png',
   },
   {
     id: 13,
@@ -511,11 +516,13 @@ export const members = [
     id: 14,
     name: "SEONA LOBO",
     position: "JUNIOR CO-ORDINATOR",
+     image:'./src/assets/card/seona.png',
   },
   {
     id: 15,
     name: "JOSHUA DIAS",
     position: "JUNIOR CO-ORDINATOR",
+     image:'./src/assets/card/joshua.png',
   },
   {
     id: 16,
