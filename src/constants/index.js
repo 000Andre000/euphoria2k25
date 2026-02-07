@@ -534,37 +534,6 @@ export const members = [
 
 
 
-// export const winners = [
-//   {
-//     "department":{
-//     bms: [
-//       { "Event": "Table Tennis Girls Singles", "Place": "1st", "Winner": "Adhira" },
-//       { "Event": "Table Tennis Girls Singles", "Place": "2nd", "Winner": "Shonell" },
-//       { "Event": "Table Tennis Girls Singles", "Place": "3rd", "Winner": "Vidhyashree" },
-//       { "Event": "Table Tennis Girls Doubles", "Place": "1st", "Winner": "Adhira David & Vidyashree" },
-//       { "Event": "Table Tennis Doubles", "Place": "3rd", "Winner": "Yashneil & Abdul" },
-//       { "Event": "80m Girls", "Place": "1st", "Winner": "Chloe Xaviers" },
-//       { "Event": "80m Girls", "Place": "2nd", "Winner": "Sofia Nadar" },
-//       { "Event": "80m Girls", "Place": "3rd", "Winner": "Shivani Sawant" },
-//       { "Event": "200m Girls", "Place": "1st", "Winner": "Chloe Xaviers" },
-//       { "Event": "200m Girls", "Place": "2nd", "Winner": "Shivani Sawant" },
-//       { "Event": "200m Girls", "Place": "3rd", "Winner": "Tia Xaviers" },
-//       { "Event": "400m Girls", "Place": "1st", "Winner": "Tia Xaviers" },
-//       { "Event": "400m Girls", "Place": "2nd", "Winner": "Chloe Xaviers" },
-//       { "Event": "400m Girls", "Place": "3rd", "Winner": "Shivani Sawant" },
-//       { "Event": "800m Boys", "Place": "2nd", "Winner": "Adrian Soans" },
-//       { "Event": "Relay Girls", "Place": "1st", "Winner": "BMS" },
-//       { "Event": "Mixed Relay", "Place": "2nd", "Winner": "BMM" },
-//       { "Event": "VolleyBall Girls", "Place": "1st", "Winner": "BMS" },
-//       { "Event": "Box Cricket Girls", "Place": "3rd", "Winner": "BMS" },
-//       { "Event": "Throwball", "Place": "1st", "Winner": "BMS" },
-//       { "Event": "Rink Football Girls", "Place": "1st", "Winner": "BMS (Team Kyra)" },
-//       { "Event": "Basketball Girls", "Place": "2nd", "Winner": "BMS" },
-//       { "Event": "Basketball Boys", "Place": "1st", "Winner": "BMS" },
-//       { "Event": "Kabaddi", "Place": "3rd", "Winner": "BMS" },
-//       { "Event": "Field Football", "Place": "1st", "Winner": "BMS" }
-//     ],
-
 //     comps: [
 //       { "Event": "Table Tennis Boys Singles", "Place": "2nd", "Winner": "Nigel" },
 //       { "Event": "Table Tennis Girls Doubles", "Place": "3rd", "Winner": "Nicole Saldanha & Janice" },
